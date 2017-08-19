@@ -45,7 +45,10 @@
     line-height: 1em;
     margin: 0;
     padding: 0;
+    -webkit-transition: 0.4s;
+    -o-transition: 0.4s;
     transition: 0.4s;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
 
@@ -89,6 +92,8 @@ li{
     width: 100%;
 }
 .row--flex{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -186,7 +191,12 @@ li{
 }
 
 .col--flex{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
 }
 
@@ -224,8 +234,14 @@ a, a:visited, a:hover, a:focus, a:active{
     padding: 20px 0;
     width: 100%;
     position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     margin-top: 60px;
 }
@@ -294,6 +310,8 @@ a, a:visited, a:hover, a:focus, a:active{
 }
 
 .card--list{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -346,6 +364,8 @@ a, a:visited, a:hover, a:focus, a:active{
     min-width: 100%;
     position: relative;
     left: 50%;
+    -webkit-transform: translate(-50%);
+    -ms-transform: translate(-50%);
     transform: translate(-50%);
 }
 
@@ -356,6 +376,8 @@ a, a:visited, a:hover, a:focus, a:active{
     width: unset;
     right: 0;
     left: unset;
+    -webkit-transform: translate(0);
+    -ms-transform: translate(0);
     transform: translate(0);
 }
 .card--overlay .card__thumbnail:after{
@@ -367,8 +389,8 @@ a, a:visited, a:hover, a:focus, a:active{
     left: 0;
     background: transparent; /* For browsers that do not support gradients */
     background: -webkit-linear-gradient(transparent, rgba(0,0,0, 0.9)); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(transparent,  rgba(0,0,0, 0.9)); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(transparent,  rgba(0,0,0, 0.9)); /* For Firefox 3.6 to 15 */
+    background: -o-linear-gradient(transparent,  rgba(0,0,0, 0.9)); /* For Opera 11.1 to 12.0 */ /* For Firefox 3.6 to 15 */
+    background: -webkit-gradient(linear,  left top, left bottom,  from(transparent),  to(rgba(0,0,0, 0.9)));
     background: linear-gradient(transparent,  rgba(0,0,0, 0.9)); /* Standard syntax */
 }
 
@@ -477,6 +499,8 @@ a, a:visited, a:hover, a:focus, a:active{
     .header{
         padding: 20px;
         margin-bottom: 20px;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
         justify-content: space-between;
     }
 
@@ -508,6 +532,9 @@ a, a:visited, a:hover, a:focus, a:active{
     }
 
     .row--flex{
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
     }
 
@@ -547,6 +574,8 @@ a, a:visited, a:hover, a:focus, a:active{
     /* -- 4.2 -- */
 
     .card--vertical{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         border: none;
         min-height: 115px;
@@ -567,6 +596,8 @@ a, a:visited, a:hover, a:focus, a:active{
 
     /* -- 4.1 -- */
     .header{
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
         justify-content: space-between;
     }
 
@@ -583,6 +614,9 @@ a, a:visited, a:hover, a:focus, a:active{
     /* -- 4.1 -- */
 
     .header{
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
     }
 
