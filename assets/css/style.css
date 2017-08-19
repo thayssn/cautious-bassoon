@@ -223,6 +223,9 @@ a, a:visited, a:hover, a:focus, a:active{
     outline: none;
     text-decoration: none;
 }
+a:hover{
+    text-decoration: underline;
+}
 
 /* ------------------- */
 /* 4. ELEMENTS         */
@@ -374,6 +377,11 @@ a, a:visited, a:hover, a:focus, a:active{
     bottom: 0;
     margin: 0;
     width: auto;
+    left: auto;
+    right: 0;
+    -webkit-transform: translate(0);
+    -ms-transform: translate(0);
+    transform: translate(0);
 }
 .card--overlay .card__thumbnail:after{
     content: "";
